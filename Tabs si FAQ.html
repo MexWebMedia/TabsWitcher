@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FAQ - Tabs</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/pop-up-reset.css">
+    <link rel="stylesheet" type="text/css" href="CSS/FAQCSS.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="Wrapper">
+        <div id="headingWrapper">
+            <video id="bgvid" autoplay="autoplay" preload="none" loop="loop" muted="muted" playsinline="playsinline" style="" data-mp4="http://static.cdprojektred.com/thewitcher.com/gfx/witcher3/goty/tw3goty.mp4" data-webm="http://static.cdprojektred.com/thewitcher.com/gfx/witcher3/goty/tw3goty.webm"><source src="http://static.cdprojektred.com/thewitcher.com/gfx/witcher3/goty/tw3goty.webm" type="video/webm"></video>
+                <div class="logoWrapper">
+                    <img class="logo" src="http://static.cdprojektred.com/thewitcher.com/gfx/witcher3/logo-en.png">
+                </div>
+        </div>
+    	<div id="buttonContainer">
+    		<button class="tabButton" id="buttonDescription" onclick="Tabs(event, 'Description')">Description</button>
+    		<button class="tabButton" id="buttonSpecs" onclick="Tabs(event, 'Specs')">Specs</button>
+    		<button class="tabButton" id="buttonReviews" onclick="Tabs(event, 'Reviews')">Reviews</button>
+    		<button class="tabButton" id="buttonQuestions" onclick="Tabs(event, 'Questions')">Questions</button>
+    	</div>
+    	<section id="Description" class="tabContent" onchange="0">
+            <div id="hunterDescWrapper">
+                <div id="hunterText">
+                    <h3 class="innerTitle">PROFESSIONAL<br>MONSTER HUNTER</h3>
+                    <p class="descInfo">Witchers are mutants, men subjected to gruelling training and flesh-altering experiments that prepare them for one purpose: to kill monsters. Geralt was forged at the elite School of the Wolf and is considered one of the deadliest witchers ever trained. He possesses superhuman reflexes and strength, and his sword fighting skills are second to none.</p>
+                </div>
+            </div>
+            <div id="worldDescWrapper">
+                <div id="worldText">
+                    <h3 class="innerTitle">OPEN WORLD</h3>
+                    <p class="descInfo">In the open world of Wild Hunt, you chart your own path to adventure. You play as a bounty hunter, a man of the road. You set your own goals and choose your own destinations. Go after the bounty on the head of a nasty monster pestering a village or help a scheming prince who needs a dirty job done -- no matter what style of epic questing you crave, The Witcher will provide it.</p>
+                </div>
+            </div>
+    	</section>
+    	<section id="Specs" class="tabContent" onchange="1">
+            <h2 class="sectionTitle">Specs</h2>
+    		<div id="containerSpecs">
+    			<ul id="minimum">
+                    <h4 class="specsHeading">Minimum:</h4>
+                    <li class="specsInfo">OS: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10</li>
+                    <li class="specsInfo">Processor: Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940</li>
+                    <li class="specsInfo">Memory: 6 GB RAM</li>
+                    <li class="specsInfo">Graphics: Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870</li>
+                    <li class="specsInfo">Storage: 35 GB available space</li>         
+                </ul>
+                <ul id="recommended">
+                    <h4 class="specsHeading">Recommended:</h4>
+                    <li class="specsInfo">OS: 64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10</li>
+                    <li class="specsInfo">Processor: Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz</li>
+                    <li class="specsInfo">Memory: 8 GB RAM</li>
+                    <li class="specsInfo">Graphics: Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290</li>
+                    <li class="specsInfo">Storage: 35 GB available space</li> 
+                </ul>
+    		</div>
+    	</section>
+        <section id="Reviews" class="tabContent" onchange="2">
+            <h2 class="sectionTitle">Reviews</h2>
+            <h3 class="placeholderAnnouncement">There are no reviews, be the first!</h3>
+            <form action="submit" class="areaContainer">
+                <textarea name="userReview" rows="10" id="userReview"></textarea>
+                <input type="button" name="sendReview" id="sendReview" value="Submit Review">
+            </form>
+        </section>
+        <section id="Questions" class="tabContent" onchange="4">
+            <h2 class="sectionTitle">Questions</h2>
+            <h3 class="placeholderAnnouncement">If you have any questions regarding this product<br>you can check the FAQ below</h3>
+            <div id="faqPositioning">
+            <div id="faqContainer">
+                <button class="faqButton" id="one"><i class="fas fa-plus testerino"></i>
+                    <span class="faqResize">
+                        On which platforms can I play the Witcher III?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">PC (Windows only, at present), Xbox One, and PlayStation 4</p>
+                </div>
+                <button class="faqButton" id="two"><i class="fas fa-plus testerino"></i>
+                    <span class="faqResize">
+                        Can I use a console controller on PC? Can I remap Keys?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">Yes, you can use mouse and keyboard, and map the keys you would like to use.</p>
+                </div>
+                <button class="faqButton" id="three"><i class="fas fa-plus"></i>
+                    <span class="faqResize">
+                        What fps can we expect the game have on the three platforms?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">The game runs in 1080p/30fps on PlayStation 4 and 900p/30fps on Xbox One. On PC, it is expected that, at the recommended system requirements, or better, a GeForce GTX 970, or near equivalent GPU, will be required for 60 fps.</p>
+                </div>
+                <button class="faqButton" id="four"><i class="fas fa-plus"></i>
+                    <span class="faqResize">
+                        Do I need to play the previous games before starting Wild Hunt?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">No, The Witcher III is a new, stand-alone RPG, meant to be enjoyed by both new and returning players alike. If you wish to play the previous titles, they may give you a deeper, and richer perspective on the world of The Witcher, but it is not necessary in order to play.</p>
+                </div>
+                <button class="faqButton" id="five"><i class="fas fa-plus"></i>
+                    <span class="faqResize">
+                        On which platforms can I play the Witcher III?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">PC (Windows only, at present), Xbox One, and PlayStation 4</p>
+                </div>
+                <button class="faqButton" id="six"><i class="fas fa-plus"></i>
+                    <span class="faqResize">
+                        What languages are supported in the game?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">The game is available in the following languages: English, Polish, German, French, Russian, Brazilian Portuguese and Japanese (full voiceover); Arabic, Italian, Spanish, Traditional Chinese, Czech, Hungarian, Latin America Spanish, Korean (subtitles).</p>
+                </div>
+                <button class="faqButton" id="seven"><i class="fas fa-plus"></i>
+                    <span class="faqResize">
+                        How long is the game?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">There are approximately 50 hours of main story gameplay, with an additional 50+ hours of side quests. For players who wish to explore and pursue everything, there can be over 200 hours; however, this depends very much on your playing style, and quests choices. An estimated average of 75 - 150 hours can be expected.</p>
+                </div>
+                <button class="faqButton" id="eight"><i class="fas fa-plus"></i>
+                    <span class="faqResize">
+                        Does the retail version of the game use Steam or GOG Galaxy for installation?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">No, the retail version is DRM-free and does not force you to use Steam or any other online platform</p>
+                </div>
+                <button class="faqButton" id="nine"><i class="fas fa-plus"></i>
+                    <span class="faqResize">
+                        Do I need an internet connection to play?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">If you purchase a digital copy, once you've downloaded the game, you will not need to be connected to the internet to play it. The same applies for the physical retail copy.</p>
+                </div>
+                <button class="faqButton" id="ten"><i class="fas fa-plus"></i>
+                    <span class="faqResize">
+                        How do I transfer my savegames/plot-choices from the previous Witchers?
+                    </span>
+                </button>
+                <div class="answerMain">
+                    <p class="faqResize">On PC, if you still have your saves, they'll be imported automatically. On PS4, X-box One, or if you no longer have your PC saves, an in-game conversation with a special NPC will allow you to recreate your story decisions from the previous titles.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footerContainer">
+                <div class="logoWrapper">
+                    <img class="logoFooter" src="http://static.cdprojektred.com/thewitcher.com/gfx/witcher3/logo-en.png" style="height: 100px">
+                </div>
+                <h4 id="footerText">D.C.A.<br>Tabs and FAQ</h4>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        function Tabs(evt, miscSection) {
+            var tabContent, tabButton, i;
+            tabButton = document.getElementsByClassName("tabButton");
+            tabContent = document.getElementsByClassName("tabContent");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            for (i = 0; i < tabButton.length; i++) {
+                tabButton[i].className = tabButton[i].className.replace(" whiteActive", "");
+            }
+            document.getElementById(miscSection).style.display = "block";
+            evt.currentTarget.className += " whiteActive";
+        };
+
+        var faqButton = document.getElementsByClassName("faqButton");
+        var fas = document.getElementsByClassName("fas fa-plus");
+
+        for (var i = 0; i < faqButton.length; i++) {
+            faqButton[i].onclick = function () {
+                this.classList.toggle('open');
+
+            for (var i = 0; i < fas.length; i++) {
+                fas[i].onclick = function() {
+                    this.classList.toggle('fasRotationToggle');
+                    }
+                };
+
+            var answerMain = this.nextElementSibling;
+
+            if (answerMain.style.maxHeight) {
+                    answerMain.style.maxHeight = null;
+            } else {
+                    answerMain.style.maxHeight = answerMain.scrollHeight + "px";
+                }
+            }
+        };
+    </script>
+</body>
+</html>

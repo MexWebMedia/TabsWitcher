@@ -1,2 +1,1 @@
 # TabsWitcher
-Fan-made page.
